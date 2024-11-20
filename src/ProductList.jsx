@@ -252,11 +252,11 @@ function ProductList() {
     setShowCart(false);
   };
 
-  const handleAddToCart = (product) => {
-    dispatch(addItem(product));
+  const handleAddToCart = (plant) => {
+    dispatch(addItem(plant));
     setAddedToCart((prevState) => ({
       ...prevState,
-      [product.name]: true,
+      [plant.name]: true,
     }));
   };
 
